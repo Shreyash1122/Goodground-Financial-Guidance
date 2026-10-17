@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f7f1" />
+    <meta name="description" content="Clear, practical money guidance for every season of family life. Build a budget, plan your goals and feel more confident about tomorrow." />
+    <title>Goodground — money guidance for real life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Goodground home"><span class="brand-mark">g</span><span>goodground<span class="brand-period">.</span></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#how">How it works</a><a href="#toolkit">Your toolkit</a><a href="#stories">Real life, real plans</a>
+        <a class="nav-cta" href="#planner">Build my plan <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> A little more clarity, every month</div>
+          <h1>Money plans for<br /><em>real family life.</em></h1>
+          <p class="hero-intro">The school fees. The home loan. The “what if?” fund. Make a plan that holds all of it — and still leaves room to live.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#planner">Let’s make a plan <span>↗</span></a><a class="text-link" href="#how"><span class="play">▶</span> See how it works</a></div>
+          <div class="hero-note"><div class="avatar-stack"><span>R</span><span>A</span><span>M</span><span>+</span></div><p>Made for households like yours<br /><strong>Practical. Private. Judgment-free.</strong></p></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a family planning finances together">
+          <div class="sun"></div><div class="art-label"><span class="label-icon">✳</span> Your next chapter, in reach</div>
+          <div class="house"><div class="roof"></div><div class="house-body"><div class="window window-one"></div><div class="window window-two"></div><div class="door"></div></div><div class="house-base"></div></div>
+          <div class="plant plant-one"><i></i><i></i><i></i><b></b></div><div class="plant plant-two"><i></i><i></i><i></i><b></b></div>
+          <div class="note-card goal-card"><div class="mini-heading"><span class="tiny-icon">↗</span><span>YOUR HOME GOAL</span><span class="dots">···</span></div><strong>₹18.5L <small>of ₹32L</small></strong><div class="progress"><span style="width:58%"></span></div><div class="card-foot"><span>58% there</span><span>On track</span></div></div>
+          <div class="note-card calm-card"><span class="calm-icon">✦</span><div><strong>One step at a time</strong><small>Your plan is taking shape.</small></div></div>
+          <div class="art-caption">A good plan makes room for the life you’re building.</div>
+        </div>
+      </section>
+
+      <section class="trust-strip"><p>BUILT FOR THE MANY THINGS LIFE ASKS OF YOU</p><div><span>🏠 &nbsp;A home of your own</span><span>🎒 &nbsp;Growing up, covered</span><span>🌱 &nbsp;A future that feels steady</span><span>☕ &nbsp;Today, too</span></div></section>
+
+      <section class="how-section section-pad" id="how">
+        <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> No jargon. No judgment.</div><h2>Small steps.<br /><em>A steadier future.</em></h2></div><p>Good money decisions aren’t about getting everything perfect. They’re about knowing what matters next — and having a clear way to get there.</p></div>
+        <div class="steps-grid"><article class="step-card"><div class="step-top"><span class="step-num">01</span><span class="step-icon mint">◉</span></div><h3>See where you are</h3><p>Bring your income, monthly costs and commitments into one clear picture. No spreadsheets required.</p><a href="#planner">Start with your month <span>↗</span></a></article><article class="step-card"><div class="step-top"><span class="step-num">02</span><span class="step-icon yellow">✳</span></div><h3>Choose what matters</h3><p>Emergency savings, a home, education, retirement. Put your family’s priorities in your order.</p><a href="#toolkit">Explore your goals <span>↗</span></a></article><article class="step-card"><div class="step-top"><span class="step-num">03</span><span class="step-icon pink">↗</span></div><h3>Make room to grow</h3><p>Get a simple next step for today and a flexible plan that can grow as your life changes.</p><a href="#planner">Find your next step <span>↗</span></a></article></div>
+      </section>
+
+      <section class="planner-section" id="planner"><div class="planner-wrap"><div class="planner-copy"><div class="eyebrow light"><span class="eyebrow-dot"></span> Your money, made clearer</div><h2>Start with the<br /><em>month you have.</em></h2><p>A quick check-in can turn “I hope we’re okay” into a plan you can actually use.</p><div class="planner-points"><span><b>✓</b> Your numbers stay on this device</span><span><b>✓</b> No account or sign-up needed</span><span><b>✓</b> A starting point, not financial advice</span></div></div>
+        <div class="planner-card"><div class="planner-card-head"><div><span class="micro-label">MONTHLY SNAPSHOT</span><h3>Your household plan</h3></div><span class="privacy-pill">🔒 &nbsp;Private by design</span></div><div class="fields-grid"><label>Monthly take-home income <span class="input-wrap"><b>₹</b><input id="income" type="number" min="0" value="85000" inputmode="numeric" aria-label="Monthly take-home income in rupees" /></span></label><label>Essentials & bills <span class="input-wrap"><b>₹</b><input id="essentials" type="number" min="0" value="48000" inputmode="numeric" aria-label="Monthly essentials and bills in rupees" /></span></label><label>Loans & EMIs <span class="input-wrap"><b>₹</b><input id="loans" type="number" min="0" value="12000" inputmode="numeric" aria-label="Monthly loans and EMIs in rupees" /></span></label><label>Savings right now <span class="input-wrap"><b>₹</b><input id="savings" type="number" min="0" value="8000" inputmode="numeric" aria-label="Monthly savings in rupees" /></span></label></div><div class="plan-result"><div class="result-ring"><span>₹</span><strong id="leftover">17,000</strong><small>left this month</small></div><div class="result-copy"><span class="result-status" id="status">A good place to grow from</span><p id="result-message">You have some breathing room. Let’s give it a purpose that matters to you.</p><a class="result-link" href="#toolkit">Explore your next steps <span>↗</span></a></div></div><p class="planner-disclaimer">A simple estimate to help you get started. Your actual needs may differ.</p></div></div></section>
+
+      <section class="goals-section section-pad" id="toolkit"><div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> The things you’re working toward</div><h2>Make the big things<br /><em>feel more doable.</em></h2></div><p>Every family has its own version of “getting ahead.” Start with the goal that matters most to you right now.</p></div><div class="goal-grid"><article class="goal-tile goal-home"><div class="tile-icon">⌂</div><div class="tile-meta">THE NEXT KEY</div><h3>Bring a home<br />within reach.</h3><p>Understand your down payment, loan and monthly comfort zone.</p><a href="#goal-calculator">Plan a home goal <span>↗</span></a><div class="tile-illustration home-illo"><div></div><span>⌂</span></div></article><article class="goal-tile goal-kids"><div class="tile-icon">✿</div><div class="tile-meta">ROOM TO GROW</div><h3>Prepare for<br />their possibilities.</h3><p>Build a steady education fund without putting today on hold.</p><a href="#goal-calculator">Plan for education <span>↗</span></a><div class="tile-illustration kids-illo"><span>✳</span><i></i><b></b></div></article><article class="goal-tile goal-future"><div class="tile-icon">↗</div><div class="tile-meta">A SOFTER LANDING</div><h3>Take care of<br />future you.</h3><p>Make space for retirement and the unexpected, one month at a time.</p><a href="#goal-calculator">Build your safety net <span>↗</span></a><div class="tile-illustration future-illo"><span>✦</span><i></i><b></b></div></article></div></section>
+
+      <section class="goal-calculator" id="goal-calculator"><div class="calc-inner"><div><div class="eyebrow"><span class="eyebrow-dot"></span> A little future math</div><h2>See what a small<br /><em>step can add up to.</em></h2><p>Try a monthly amount and timeline. Your estimate is a useful starting point for a conversation with a qualified financial professional.</p></div><div class="calc-card"><label for="monthly-invest">If you set aside <strong id="monthly-label">₹5,000</strong> a month</label><input id="monthly-invest" type="range" min="500" max="25000" step="500" value="5000" /><div class="range-ends"><span>₹500</span><span>₹25,000</span></div><label for="years">For <strong id="years-label">10 years</strong></label><input id="years" type="range" min="1" max="30" step="1" value="10" /><div class="range-ends"><span>1 year</span><span>30 years</span></div><div class="calc-total"><span>Your contributions could grow to*</span><strong id="future-value">₹10.3L</strong><small id="contributed">You put in ₹6.0L over 10 years</small></div><p class="calc-note">*Illustration assumes 8% annual growth, compounded monthly. Returns are not guaranteed.</p></div></div></section>
+
+      <section class="stories-section section-pad" id="stories"><div class="story-quote"><span class="quote-mark">“</span><blockquote>We weren’t looking for a magic number. We just wanted to stop feeling like every month was a surprise.</blockquote><div class="quote-person"><span class="quote-avatar">S</span><span><strong>Shalini & Amit</strong><small>A family of four · Pune</small></span></div><div class="story-dots"><i class="active"></i><i></i><i></i></div></div><div class="story-aside"><div class="eyebrow"><span class="eyebrow-dot"></span> Real life, real plans</div><h2>Progress has<br />many shapes.</h2><p>Maybe it’s paying down a loan. Maybe it’s finally starting that emergency fund. There’s no one right timeline — just your next good step.</p><a class="button button-outline" href="#planner">Find your next step <span>↗</span></a><div class="scribble">You’re doing<br />better than<br />you think <span>♡</span></div></div></section>
+
+      <section class="faq-section section-pad"><div class="faq-head"><div class="eyebrow"><span class="eyebrow-dot"></span> A few good questions</div><h2>Good to know.</h2></div><div class="faq-list"><details><summary>Is this financial advice? <span>+</span></summary><p>Goodground offers educational tools and general information to help you organize your thinking. It is not personalized investment, tax, legal or insurance advice. For decisions about your specific situation, speak with a qualified professional.</p></details><details><summary>Do I need to share my personal details? <span>+</span></summary><p>No account is needed to use the planners on this page. The numbers you enter are processed in your browser and are not sent to a server.</p></details><details><summary>What if I can’t save much right now? <span>+</span></summary><p>That’s okay. A plan can start with understanding your essentials, building a small buffer, or reviewing one recurring cost. Progress is personal, and it doesn’t have to look the same for everyone.</p></details><details><summary>Can my plan change later? <span>+</span></summary><p>It should. Family priorities shift over time. Revisit your numbers when something changes — a new job, a move, a growing family, or a goal that matters more.</p></details></div></section>
+
+      <section class="closing-cta"><div class="closing-sun">✳</div><div class="eyebrow light"><span class="eyebrow-dot"></span> Your future is built in ordinary months</div><h2>Let’s make this<br /><em>month count.</em></h2><p>One clear next step is enough to begin.</p><a class="button button-light" href="#planner">Build my family plan <span>↗</span></a><span class="closing-note">A little clarity goes a long way.</span></section>
+    </main>
+    <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">g</span><span>goodground<span class="brand-period">.</span></span></a><p>Money guidance for real family life.</p><div class="footer-links"><a href="#how">How it works</a><a href="#toolkit">Your toolkit</a><a href="#planner">Monthly planner</a><a href="#home">Back to top ↑</a></div><small>© 2026 Goodground · Educational tools only, not financial advice.</small></footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
+
