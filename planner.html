@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Build a simple monthly household budget and explore an illustrative savings projection with Goodground." />
+    <title>Monthly planner — Goodground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" /><link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">g</span><span>goodground<span class="brand-period">.</span></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button><nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="goals.html">Family goals</a><a href="guides.html">Money guides</a><a class="nav-cta" href="planner.html" aria-current="page">Build my plan <span>↗</span></a></nav></header>
+    <main>
+      <section class="interior-hero"><div><div class="breadcrumb"><a href="index.html">Home</a> / Monthly planner</div><div class="eyebrow"><span class="eyebrow-dot"></span> Your money, made clearer</div><h1>Give your month<br /><em>a little breathing room.</em></h1><p>Put the essentials in one place, see what’s left, and try a small future goal. Your numbers stay in this browser.</p></div><aside class="hero-aside"><strong>A plan should fit your real life.</strong><p>Start with the numbers you know. You can adjust them any time as your month or priorities change.</p><a href="#monthly-plan">Jump to your monthly snapshot ↓</a></aside></section>
+      <section class="page-main" id="monthly-plan"><div class="page-section-title"><div class="eyebrow"><span class="eyebrow-dot"></span> Monthly snapshot</div><h2>What does this month look like?</h2><p>Enter approximate monthly amounts in rupees. This simple view is a starting point, not a grade.</p></div>
+        <div class="planner-layout"><div class="planner-form"><h2>Your household plan</h2><p>Change any field to see your monthly breathing room update.</p><div class="planner-fields">
+          <label>Take-home income<span class="input-wrap"><b>₹</b><input id="income" type="number" min="0" value="85000" inputmode="numeric" aria-label="Monthly take-home income in rupees" /></span></label>
+          <label>Essentials & bills<span class="input-wrap"><b>₹</b><input id="essentials" type="number" min="0" value="48000" inputmode="numeric" aria-label="Monthly essentials and bills in rupees" /></span></label>
+          <label>Loans & EMIs<span class="input-wrap"><b>₹</b><input id="loans" type="number" min="0" value="12000" inputmode="numeric" aria-label="Monthly loans and EMIs in rupees" /></span></label>
+          <label>Savings already set aside<span class="input-wrap"><b>₹</b><input id="savings" type="number" min="0" value="8000" inputmode="numeric" aria-label="Monthly savings in rupees" /></span></label>
+        </div><div class="planner-breakdown"><div class="breakdown-item"><span>Income</span><strong id="income-total">₹85,000</strong></div><div class="breakdown-item"><span>Planned outgoings</span><strong id="outgoing-total">₹68,000</strong></div><div class="breakdown-item"><span>Savings included</span><strong id="savings-total">₹8,000</strong></div></div><div class="planner-summary"><div><span class="summary-label">ESTIMATED BALANCE</span><strong id="balance" aria-live="polite">₹17,000</strong><p id="budget-message">You have some breathing room. Consider which family goal matters most right now.</p></div><a class="result-link" href="goals.html">Explore family goals ↗</a></div>
+          <div class="projection-box"><h3>A small step toward a future goal</h3><label for="monthly-invest">Monthly amount <strong id="monthly-label">₹5,000</strong></label><input id="monthly-invest" type="range" min="500" max="25000" step="500" value="5000" /><label for="years">Time horizon <strong id="years-label">10 years</strong></label><input id="years" type="range" min="1" max="30" step="1" value="10" /><div class="projection-result"><span>Illustrative future value*</span><strong id="future-value">₹10.3L</strong><small id="contributed">You put in ₹6.0L over 10 years</small></div><p class="calc-note">*Illustration assumes 8% annual growth, compounded monthly. Actual returns vary and are not guaranteed.</p></div>
+        </div><aside class="side-note"><h3>A few helpful reminders</h3><ul><li>Include irregular costs like school fees, repairs and annual renewals.</li><li>If your outgoings exceed your income, start by checking the numbers and essentials.</li><li>A small emergency buffer can help make unexpected costs less stressful.</li></ul><p class="disclaimer">Educational estimate only. It does not account for taxes, fees, inflation or your personal circumstances and is not individualized financial advice. Consider speaking with a qualified professional.</p><a class="result-link" href="guides.html">Read the money guides ↗</a></aside></div>
+      </section>
+      <section class="page-main" style="padding-top:0"><div class="page-cta"><h3>Want to give your balance a direction?</h3><p>Choose one goal that feels important for your family this year.</p><a class="button" href="goals.html">Explore family goals <span>↗</span></a></div></section>
+    </main>
+    <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">g</span><span>goodground<span class="brand-period">.</span></span></a><p>Money guidance for real family life.</p><div class="footer-links"><a href="planner.html">Monthly planner</a><a href="goals.html">Family goals</a><a href="guides.html">Money guides</a><a href="index.html">Home ↑</a></div><small>© 2026 Goodground · Educational tools only, not financial advice.</small></footer>
+    <script type="module" src="src/planner.js"></script>
+  </body>
+</html>
+
