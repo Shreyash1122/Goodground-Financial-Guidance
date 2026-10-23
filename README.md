@@ -1,10 +1,15 @@
 # Goodground
 
-A responsive financial guidance website for middle-class families in India. It includes a browser-only monthly budget snapshot, an illustrative savings growth calculator, practical family goal guides, and educational FAQs.
+A responsive, multipage financial guidance website for middle-class families in India. It includes a browser-only monthly budget planner, an illustrative savings projection, family goal planning, plain-language money guides, and educational FAQs.
 
 ## Run locally
 
-Open `index.html` in a modern browser. No build step or account is required.
+Open `index.html` in a modern browser. No build step or account is required. The site has four pages:
+
+- `index.html` — introduction and overview
+- `planner.html` — live monthly budget snapshot and illustrative savings projection
+- `goals.html` — emergency savings, home, education, retirement, debt and protection goals
+- `guides.html` — plain-language household finance guides
 
 ## Notes
 
