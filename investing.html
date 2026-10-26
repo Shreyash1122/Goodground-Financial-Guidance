@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore a private, educational salary and budget calculator with broad investing topics to research—not stock or fund picks." />
+    <title>Investing learning path — Goodground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" /><link rel="stylesheet" href="pages.css" />
+  </head>
+  <body>
+    <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">g</span><span>goodground<span class="brand-period">.</span></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button><nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="goals.html">Family goals</a><a href="guides.html">Money guides</a><a href="investing.html" aria-current="page">Investing guide</a><a class="nav-cta" href="planner.html">Build my plan <span>↗</span></a></nav></header>
+    <main>
+      <section class="interior-hero invest-hero"><div><div class="breadcrumb"><a href="index.html">Home</a> / Investing guide</div><div class="eyebrow"><span class="eyebrow-dot"></span> Make a more informed next move</div><h1>Understand your room<br /><em>before exploring risk.</em></h1><p>Share a few monthly numbers and your goal timeline to get a private budget snapshot and broad investing topics to learn about.</p></div><aside class="hero-aside"><strong>A learning path, not a buy list.</strong><p>Goodground never picks stocks, mutual fund schemes or amounts to invest. Your results stay in this browser.</p><a href="#investing-check">Start your check-in ↓</a></aside></section>
+
+      <section class="page-main invest-main" id="investing-check">
+        <div class="page-section-title"><div class="eyebrow"><span class="eyebrow-dot"></span> A private household check-in</div><h2>Start with what your month can carry.</h2><p>Use approximate monthly numbers in rupees. The result is an educational starting point, not a personalized investment recommendation.</p></div>
+        <div class="invest-layout">
+          <form class="invest-form" id="invest-form">
+            <div class="invest-form-section"><span class="form-step">01</span><div><h3>Your monthly picture</h3><p>Enter take-home income after tax and regular spending.</p></div></div>
+            <div class="planner-fields invest-fields">
+              <label>Monthly take-home salary <span class="input-wrap"><b>₹</b><input id="salary" type="number" min="1" step="500" placeholder="e.g. 85,000" required inputmode="numeric" /></span></label>
+              <label>Essentials & bills <span class="input-wrap"><b>₹</b><input id="essentials" type="number" min="0" step="500" placeholder="e.g. 42,000" required inputmode="numeric" /></span></label>
+              <label>Monthly loan payments <span class="input-wrap"><b>₹</b><input id="debt-payments" type="number" min="0" step="500" placeholder="e.g. 8,000" required inputmode="numeric" /></span></label>
+              <label>Other monthly spending <span class="input-wrap"><b>₹</b><input id="other-spending" type="number" min="0" step="500" placeholder="e.g. 15,000" required inputmode="numeric" /></span></label>
+              <label>Emergency savings you can access <span class="input-wrap"><b>₹</b><input id="emergency-savings" type="number" min="0" step="1000" placeholder="e.g. 60,000" required inputmode="numeric" /></span></label>
+              <label>Example buffer goal <select id="buffer-months"><option value="3" selected>3 months of core costs</option><option value="6">6 months of core costs</option><option value="9">9 months of core costs</option></select></label>
+            </div>
+            <div class="invest-form-section second-step"><span class="form-step">02</span><div><h3>What are you planning for?</h3><p>Time and comfort with ups and downs can change what is worth learning about.</p></div></div>
+            <div class="planner-fields invest-fields">
+              <label>When might you need this money?<select id="time-horizon"><option value="short">Within 3 years</option><option value="medium">In 3–7 years</option><option value="long" selected>More than 7 years</option></select></label>
+              <label>How do you feel about market swings?<select id="risk-comfort"><option value="low">I prefer steadier values</option><option value="medium" selected>I can accept some ups and downs</option><option value="high">I can tolerate larger fluctuations</option></select></label>
+              <label class="full-field">Do you currently carry high-interest debt, such as revolving credit-card debt?<select id="high-interest-debt"><option value="no" selected>No / not sure</option><option value="yes">Yes</option></select></label>
+            </div>
+            <div class="privacy-note"><span>🔒</span><p>Your entries are calculated on this device. They are not sent to a server or saved by Goodground.</p></div>
+            <button class="button button-dark calculate-button" type="submit">Show my learning path <span>↗</span></button>
+          </form>
+
+          <aside class="invest-side"><div class="side-note"><h3>How this tool thinks</h3><ol><li>It estimates what remains after the costs you enter.</li><li>It compares accessible emergency savings with the buffer goal you select.</li><li>It points to broad categories and questions to research—not specific securities.</li></ol><p class="disclaimer">Your numbers may leave out irregular expenses, dependents, insurance, taxes or other goals. The result is only as complete as the information you enter.</p></div><div class="official-links"><span class="micro-label">LEARN FROM OFFICIAL SOURCES</span><a href="https://investor.sebi.gov.in/investment-thingsbeforeinv.html" target="_blank" rel="noreferrer">SEBI: factors to consider before investing <span>↗</span></a><a href="https://www.amfiindia.com/investor/knowledge-center-info?zoneName=riskInMutualFunds" target="_blank" rel="noreferrer">AMFI: risks in mutual funds <span>↗</span></a><a href="https://www.rbi.org.in/FinancialEducation/content/I%20Can%20Do_RBI.pdf" target="_blank" rel="noreferrer">RBI: emergency fund education <span>↗</span></a><a href="https://investor.sebi.gov.in/investment_advisor.html" target="_blank" rel="noreferrer">SEBI: what investment advisers do <span>↗</span></a></div></aside>
+        </div>
+
+        <section class="invest-results" id="invest-results" aria-live="polite" hidden>
+          <div class="results-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> Your educational snapshot</div><h2>Here’s a place to begin.</h2><p id="result-intro"></p></div><button id="edit-inputs" type="button" class="edit-link">Edit my numbers ↑</button></div>
+          <div class="result-metrics"><article><span>AFTER LISTED COSTS</span><strong id="monthly-balance">₹0</strong><small>Monthly balance estimate, before any unlisted or irregular costs</small></article><article><span>EMERGENCY COVERAGE</span><strong id="coverage-months">0 months</strong><small id="buffer-gap"></small></article><article><span>EXAMPLE BUFFER GOAL</span><strong id="buffer-target">₹0</strong><small id="buffer-status"></small></article></div>
+          <div class="learning-path" id="learning-path"></div>
+          <div class="stock-note"><div class="tile-icon">↗</div><div><h3>Curious about individual stocks?</h3><p>Stocks can fall sharply and a few shares do not provide broad diversification. Learn the basics of diversification, price volatility and company research before making decisions. This tool does not provide stock tips, tickers or buy/sell calls.</p><a href="https://investor.sebi.gov.in/investment-thingsbeforeinv.html" target="_blank" rel="noreferrer">Read SEBI’s investor guide ↗</a></div></div>
+          <p class="invest-disclaimer">This is general financial education, not personalized investment, tax, legal or insurance advice. It does not recommend any product, allocation or transaction. Investments can lose value; mutual funds are not guaranteed or insured products. Consider speaking with a SEBI-registered investment adviser for advice based on your full circumstances.</p>
+        </section>
+      </section>
+    </main>
+    <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">g</span><span>goodground<span class="brand-period">.</span></span></a><p>Money guidance for real family life.</p><div class="footer-links"><a href="planner.html">Monthly planner</a><a href="goals.html">Family goals</a><a href="guides.html">Money guides</a><a href="index.html">Home ↑</a></div><small>© 2026 Goodground · Educational tools only, not financial advice.</small></footer>
+    <script type="module" src="src/investing.js"></script>
+  </body>
+</html>
+
